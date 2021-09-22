@@ -1,35 +1,21 @@
 import React, { Component } from 'react'
 import Table from './table'
+import Form from './Form'
 class App extends React.Component {
   state = {
-    characters: [
-      {
-        name: 'Charlie',
-        job: 'Janitor',
-      },
-      {
-        name: 'Mac',
-        job: 'Bouncer',
-      },
-      {
-        name: 'Dee',
-        job: 'Aspring actress',
-      },
-      {
-        name: 'Dennis',
-        job: 'Bartender',
-      },
-    ]
+    characters: [],
   }
   render() {
     const { characters } = this.state
     return (
       <div className="container">
-        <Table charactersData={characters} removecharacter={this.removecharacter} />
+        <Table charactersData={characters} removeCharacter={this.removeCharacter} />
+        <Form handleSumit={this.handleSumit} />
       </div>
+
     )
   }
-  removecharacter = (index) => {
+  removeCharacter = (index) => {
     const { characters } = this.state
     this.setState({
       characters: characters.filter((characters, i) => {
@@ -37,5 +23,10 @@ class App extends React.Component {
       }),
     })
   }
+  handleSumit = (character) => {
+    this.setState({ characters: [...this.state.characters, character] })
+  }
+
+
 }
 export default App
