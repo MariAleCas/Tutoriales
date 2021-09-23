@@ -1,7 +1,6 @@
 window.addEventListener('load', () => {
   const diaplay = document.querySelector('.calculator-display');
   const keypadButtons = document.getElementsByClassName('keypad-button');
-
   const keypadButtonsArray = Array.from(keypadButtons);
 
   keypadButtonsArray.forEach((button) => {
@@ -9,6 +8,7 @@ window.addEventListener('load', () => {
       calculadora(button, diaplay)
     })
   })
+
 });
 
 function calculadora(button, display) {
@@ -19,7 +19,6 @@ function calculadora(button, display) {
     case '=':
       calcular(display);
       break
-
     default:
       actualizar(display, button)
       break;
