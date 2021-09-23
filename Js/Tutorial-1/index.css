@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Georama:wght@100&display=swap');
+
 * {
 background: orange;
+box-sizing: border-box;
 padding: 0;
 margin: 0;
 }
+
 html {
   font-family: 'Georama', sans-serif;
   font-size: 62.5%;
 }
+
 .container {
   display: flex;
   justify-content: center ;
@@ -15,6 +19,7 @@ html {
   height: 100vh;
   padding: 15px;
 }
+
 .calculator {
 display: flex;
 flex-direction: column;
@@ -22,6 +27,7 @@ width: 500px;
 font-size: 2rem;
 border: 1px solid gray;
 }
+
 .calculator-display {
   padding: 25px 15px;
   width: 100%;
@@ -29,15 +35,18 @@ border: 1px solid gray;
   border: 1px solid gray;
   overflow-x: auto;
 }
-.calculator-kepad {
+
+.calculator-keypad {
   display: flex;
   width: 100%;
 }
+
 .keypad-numbers {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
 }
+
 .keypad-button {
   width: 25%;
   padding: 15px 0;
@@ -46,6 +55,7 @@ border: 1px solid gray;
   background-color:white;
   border: 1px solid gray;
 }
+
 .keypad-button:hover {
   filter: brightness(80%);
   transition: filter  .25s;
@@ -58,6 +68,7 @@ border: 1px solid gray;
 .keypad-button.large {
  width: 50%;
 }
+
 .keypad-button.dark {
   background-color: lightgray;
 }
