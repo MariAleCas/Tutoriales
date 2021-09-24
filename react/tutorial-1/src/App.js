@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
 import Table from './table'
+import React, { Component } from 'react'
 import Form from './Form'
 class App extends React.Component {
   state = {
