@@ -41,13 +41,10 @@ const actualizar = (display, button) => {
   display.innerHTML += button.innerHTML
 }
 
-
 /*function calcular(display) {
   //eval trabaja con caracteres
   display.innerHTML = eval(display.innerHTML)
 }*/
-
-//const actualizar = (display, button) => !display.innerHTML ? '' : display.innerHTML += button.innerHTML
 
 /*function borrar(display) {
   display.innerHTML = 0
