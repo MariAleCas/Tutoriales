@@ -9,14 +9,20 @@ body{
   display: flex;
   flex-direction: column;
 }
+
 .carousel li{
-  display: flex;
+  display: grid;
   align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+
 }
 .carousel li .text{
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   padding: 0px 100px 63px 100px;
+}
+.carousel li #slice{
+  width: 100%;
 }
 .carousel ul{
   margin: auto;
@@ -29,13 +35,12 @@ body{
   width: 100%;
   margin: auto;
   display: grid;
-  grid-template-columns: 24% 41.4% 34.6%;
+  grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
   justify-items: stretch;
-  align-items: stretch;
 }
 .about .about-t{
-  padding: 0px 47px 0px 47px;
-  font-size: 15px;
+  padding: 68px 36px;
+  font-size: 12px;
 }
 .about img {
   width: auto;
