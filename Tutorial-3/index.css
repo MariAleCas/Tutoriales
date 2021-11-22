@@ -35,6 +35,7 @@ p{
   color: #878a9d;
 }
 .card-b{
+  display: grid;
   text-align: center;
   padding: 20px 47px;
 }
@@ -42,8 +43,10 @@ p{
   border-radius: 20px;
   padding: 6px 37px;
   background-color: #f8f9fe;
-  display: flex;
+  display: grid;
+  grid-template-columns: 66px 93px 127px;
   align-items: center;
+  justify-content: end;
   margin-bottom: 30px;
 }
 
@@ -63,4 +66,5 @@ p{
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer;
+  text-align: end;
 }
