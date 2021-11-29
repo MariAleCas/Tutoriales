@@ -15,7 +15,6 @@
   --black: #000000;
 }
 body{
-
   background: url('images/pattern-background-desktop.svg') no-repeat;
   background-color: var(--blue-light);
   margin: 0;
@@ -74,7 +73,6 @@ body{
 .plan .plan-current p:nth-child(1){
   font-weight: bold;
   color: var(--black);
-
 }
 .plan a{
   flex-grow: 1;
