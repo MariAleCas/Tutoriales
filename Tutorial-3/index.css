@@ -3,53 +3,87 @@
 *{
   box-sizing: border-box;
 }
+:root{
+  --sm:14px;
+  --md:16px;
+  --lg:25px;
+  --gray:#f8f9fe;
+  --gray-hard:#878a9d;
+  --white:#ffffff;
+  --blue-electronic:#4e45bf;
+  --blue-light:#e0e8ff;
+  --black: #000000;
+}
 body{
 
   background: url('images/pattern-background-desktop.svg') no-repeat;
-  background-color: #e0e8ff;
-  background-size: 100%;
-  margin: auto;
+  background-color: var(--blue-light);
+  margin: 0;
   font-family: 'Red Hat Display', sans-serif;
-  font-size: 16px;
   line-height: 1.7;
 }
 .container{
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-content: center;
+  margin: 0;
 }
 .card{
- background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+ background-color: var(--white);
  border-radius: 20px;
  max-width: 450px;
- margin: auto;
  overflow: hidden;
  box-shadow: 0px 0px 30px rgba(0,0,0, 0.1) ;
 }
-h3{
-  font-size:26px;
+.card-b h3{
+  font-size:var(--lg);
   margin: auto;
+  font-weight: bolder;
 }
-p{
+.card-b p{
   color: #878a9d;
+  font-size: var(--md);
+  font-weight: bolder;
 }
 .card-b{
-  display: grid;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  padding: 20px 47px;
+  padding: 20px 63px;
 }
 .plan {
   border-radius: 20px;
-  padding: 6px 37px;
+  padding: 14px 14px;
   background-color: #f8f9fe;
-  display: grid;
-  grid-template-columns: 66px 93px 127px;
+  display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: space-between;
   margin-bottom: 30px;
 }
+.plan img{
+  flex-grow: 0;
+}
+.plan-current{
+  flex-grow: 1;
+}
+.plan-current p{
+  margin: 0;
+}
+.plan .plan-current p:nth-child(1){
+  font-weight: bold;
+  color: var(--black);
 
+}
+.plan a{
+  flex-grow: 1;
+  color: #4e45bf;
+  font-weight: bolder;
+  text-decoration: underline;
+  cursor: pointer;
+  text-align: end;
+}
 .button{
   background-color:#382ae1;
   border-radius: 10px;
@@ -57,14 +91,8 @@ p{
   color: #ffffff;
   font-weight: bold;
   width: 100%;
-  padding: 14px 100px;
+  padding: 20px 36px;
   box-shadow: 0px 5px 30px rgb(57 42 227 / 45%);
   cursor: pointer;
-}
-.plan a{
-  color: #4e45bf;
-  font-weight: bold;
-  text-decoration: underline;
-  cursor: pointer;
-  text-align: end;
+  margin-bottom: 10px;
 }
