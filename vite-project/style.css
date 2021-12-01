@@ -91,7 +91,7 @@ h3{
  .glide__arrows {
    display: flex;
    top:87.9%;
-   left: 49.99%;
+   left: 50%;
   position: absolute;
   background-color: black;
 }
