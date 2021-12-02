@@ -46,9 +46,6 @@ border-radius: 10px;
   flex-direction: column;
 }
 
-.card-description{
-
-}
 .card-description h2 a{
   color: var(--White);
   text-decoration: none;
