@@ -8,7 +8,7 @@
   <title>Document</title>
 </head>
 <style>
-  h1 {
+  /* h1 {
     color: blue;
   }
 
@@ -166,7 +166,7 @@
     z-index: 5;
   }
 */
-  .red {
+  /* .red {
     width: 20px;
     height: 20px;
     background: red;
@@ -185,6 +185,56 @@
     height: 20px;
     background: yellow;
     z-index: 6;
+  }
+  section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card {
+    width: 500px;
+    height: 500px;
+    background: papayawhip;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .card img {
+    width: 100%;
+  }
+
+  .card p {
+    text-align: center;
+  }
+
+  .card p:nth-child(2) {
+    color: powderblue;
+  }*/
+  html {
+    font-size: 62.5%;
+  }
+
+  div {
+    width: 100px;
+    height: 100px;
+    background: pink;
+  }
+
+  @media (max-width: 301px) {
+    div {
+      background: red;
+    }
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .container {
+    width: 100vw;
+    height: 100vh;
+    background: plum;
   }
 </style>
 
@@ -314,13 +364,27 @@
 
   <div class="loca">Peggy</div>
   <div class="peggy"> la loca</div>
-  -->
+
   <section>
     <div class="red">Red</div>
     <div class="blue">Blue
       <div class="yellow">Yellow</div>
     </div>
   </section>
+
+  <section>
+    <div class="card">
+      <img
+        src="https://www.purina-latam.com/sites/g/files/auxxlc391/files/styles/social_share_large/public/Que_debes_saber_antes_de_adoptar_un_gatito.jpg?itok=guFplHEU"
+        alt="">
+      <p>Cat: Pancho</p>
+      <p>goldo</p>
+    </div>
+  </section>
+ -->
+  <div>plazit</div>
+  <p>Master</p>
+  <div class="container"></div>
 </body>
 
 </html>
