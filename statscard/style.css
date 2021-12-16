@@ -18,6 +18,12 @@ font-family: 'Outfit', sans-serif;*/
 --sm: 12px;
 }
 
+*{
+  margin: 0;
+}
+*, *::before, *::after{
+  box-sizing: border-box;
+}
 body{
   background-color: var(--Very-dark-blue-mainbackground);
 margin:0;
@@ -25,7 +31,6 @@ margin:0;
 .container{
   display: flex;
   flex-direction: column;
-  /*max-width: 375px;*/
   min-height: 96vh;
   justify-content: center;
   margin: 11px;
@@ -34,7 +39,7 @@ margin:0;
 }
 .card-container{
   width: 100%;
-  max-width: 882px;
+  max-width: 1110px;
   background-color: var(--Dark-desaturated-blue-cardbackground);
   border-radius: 10px;
   overflow: hidden;
@@ -44,6 +49,7 @@ margin:0;
   background-color: #aa5cdb;
   max-width: 540px;
 }
+
 img{
   height: 100%;
   width: 100%;
@@ -52,13 +58,18 @@ img{
   display: block;
 
 }
+.container-card{
+  display: flex;
+  width: 668px;
+}
 .card-information{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 51px 52px;
+  margin: 0px 30px;
   flex: 1;
   justify-content: center;
+  padding: 0 75px;
 }
 .card-information .title{
   color: var(--White-mainheading-stats);
@@ -67,12 +78,16 @@ img{
   font-weight: bolder;
 }
 .title h1{
-  font-size: 30px;
+  font-size: 33px;
+}
+p, h1{
+  overflow-wrap: break-word;
 }
 .card-information span{
   color: var(--Soft-violet-accent);
 }
 .card-description{
+  margin: 20px 0 50px;
   color: var(--White-mainheading-stats);;
   font-family: var(--lexa);
   font-size: var(--md);
@@ -106,6 +121,7 @@ img{
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: white;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -114,12 +130,30 @@ img{
 @media (max-width: 1000px) {
   body{
     text-align: center;
-   }
-  .card-container{
     margin: 0;
+   }
+   .container{
+     min-height: 96vh;
+   }
+  .container-card{
+    margin: 0;
+    min-height: 60vh;
   }
+.card-description{
+  margin: 10px 0 20px;
+}
+.card-description p{
+  font-size: 12px;
+}
+.container-card{
+  width: 232px;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+}
  .container .card-container{
-  max-width: 375px;
+  max-width: 232px;
   width: 100%;
   flex-direction: column-reverse;
  }
@@ -127,21 +161,29 @@ img{
   display: flex;
   flex-direction: column;
   padding: 10px 0;
-  margin: 0;
-  margin: 0 0 0 10px;
  }
  .card-information{
-  max-width: 264px;
-  text-align: center;
+   width: 232px;
+  align-items: center;
   padding: 0;
-  margin: 10px 20px;
+  justify-content: center;
+  padding: 0 17px;
+
  }
  .title h1{
-  font-size: 26px;
+  padding-bottom: 0;
+  font-size: 21px;
+  margin: 40px 0 10px 0;
 }
 .quantity .companies,
 .quantity .templates,
 .quantity .queries{
   margin: 0 0px 10px 0;
+}
+.quantity p{
+  font-size: 10px;
+}
+.quantity h3{
+  font-size: 12px;
 }
 }
