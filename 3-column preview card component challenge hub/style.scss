@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+$backgroung-main: #ffffff ;
+$Bright-orange: hsl(31, 77%, 52%);
+$Dark-cyan: hsl(184, 100%, 22%);
+$Very-dark-cyan: hsl(179, 100%, 13%);
+$Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+$Very-light-gray: hsl(0, 0%, 95%);
+$font-family-title: 'Big Shoulders Display', cursive;
+$font-family-paragraphs: 'Lexend Deca', sans-serif;
+
+@mixin display {
+  display: flex;
+  flex-direction: column;
+}
+body{
+  background-color: $backgroung-main;
+  margin: 0;
+  padding: 0;
+}
+@mixin font ($color) {
+  background-color: $color;
+  padding: 0 20px;
+}
+@mixin margin {
+  margin: 10px 21px;
+}
+@mixin featuresHover ($hover) {
+  background-color: $hover;
+  color: $Very-light-gray;
+  border-color: $Very-light-gray;
+  cursor: pointer;
+}
+.container{
+  background-color: $Very-light-gray;
+  @include display;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.card-container{
+  @include display;
+  max-width: 235px;
+  border-radius: 5px;
+  overflow: hidden;
+  h2 {
+    color: $Very-light-gray;
+    text-transform: uppercase;
+    margin-top: 0px;
+    font-family: $font-family-title;
+    @include margin;
+
+  }
+  p{
+    color: $Transparent-white-paragraphs;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 17px;
+    font-family: $font-family-paragraphs;
+    @include margin;
+  }
+  button{
+    width: 54%;
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 10px;
+    margin: 50px 0 35px 19px;
+    font-weight: bolder;
+    background-color: $Very-light-gray;
+  }
+  .card-sedans{
+    @include display;
+    justify-content: center;
+    @include font($Bright-orange);
+    button {
+      color: $Bright-orange;
+      &:hover{
+        @include featuresHover($Bright-orange);
+      }
+    }
+  }
+  //cuando usas @extende se hereda las propiedades incluso fuera de su padre
+  .card-suvs{
+    @include display;
+    justify-content: center;
+    @include font($Dark-cyan);
+    button {
+      color: $Dark-cyan;
+      &:hover{
+        @include featuresHover($Dark-cyan);
+      }
+    }
+  }
+  .card-luxury{
+    @include display;
+    justify-content: center;
+    @include font($Very-dark-cyan);
+    button {
+      color: $Very-dark-cyan;
+      &:hover{
+        @include featuresHover($Very-dark-cyan);
+      }
+    }
+  }
+  img{
+    width: 25%;
+    margin: 20px 18px;
+  }
+}
+@media (min-width: 780px) {
+  @mixin width {
+    width: 26.5%;
+  }
+  .card-container{
+    min-width:48%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .card-luxury{
+      border-radius: 0 5px 5px 0;
+      @include width;
+    }
+    .card-sedans{
+      border-radius: 5px 0 0 5px;
+      @include width;
+    }
+    .card-suvs{
+      @include width;
+    }
+  }
+}

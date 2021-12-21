@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 235px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.card-container h2 {
+  color: #f2f2f2;
+  text-transform: uppercase;
+  margin-top: 0px;
+  font-family: "Big Shoulders Display", cursive;
+  margin: 10px 21px;
+}
+.card-container p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 17px;
+  font-family: "Lexend Deca", sans-serif;
+  margin: 10px 21px;
+}
+.card-container button {
+  width: 54%;
+  border: 1px solid;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 10px;
+  margin: 50px 0 35px 19px;
+  font-weight: bolder;
+  background-color: #f2f2f2;
+}
+.card-container .card-sedans {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #e38826;
+  padding: 0 20px;
+}
+.card-container .card-sedans button {
+  color: #e38826;
+}
+.card-container .card-sedans button:hover {
+  background-color: #e38826;
+  color: #f2f2f2;
+  border-color: #f2f2f2;
+  cursor: pointer;
+}
+.card-container .card-suvs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #006970;
+  padding: 0 20px;
+}
+.card-container .card-suvs button {
+  color: #006970;
+}
+.card-container .card-suvs button:hover {
+  background-color: #006970;
+  color: #f2f2f2;
+  border-color: #f2f2f2;
+  cursor: pointer;
+}
+.card-container .card-luxury {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #004241;
+  padding: 0 20px;
+}
+.card-container .card-luxury button {
+  color: #004241;
+}
+.card-container .card-luxury button:hover {
+  background-color: #004241;
+  color: #f2f2f2;
+  border-color: #f2f2f2;
+  cursor: pointer;
+}
+.card-container img {
+  width: 25%;
+  margin: 20px 18px;
+}
+
+@media (min-width: 780px) {
+  .card-container {
+    min-width: 48%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card-container .card-luxury {
+    border-radius: 0 5px 5px 0;
+    width: 26.5%;
+  }
+  .card-container .card-sedans {
+    border-radius: 5px 0 0 5px;
+    width: 26.5%;
+  }
+  .card-container .card-suvs {
+    width: 26.5%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
