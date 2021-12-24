@@ -1,0 +1,64 @@
+:root{
+  --black-background: #000000;
+  --card:#3F0071;
+  --shadow: #150050;
+  --color-text: #FFFFFF;
+  --button: #610094;
+  --fontfamily: 'Roboto';
+  --lg: 48px;
+  --md: 30px;
+  --sm: 12px;
+}
+
+body{
+  margin: 0;
+  background-color: var(--black-background);
+  color: var(--color-text);
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  margin: 32px 0px;
+
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  background-color: var(--card);
+  border-radius: 30px;
+  margin: 20px;
+}
+.operation{
+  display: flex;
+}
+.formulario{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px;
+  font-size: var(--sm);
+}
+.values{
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 20px;
+}
+.calculate{
+  display: flex;
+  justify-content:center;
+}
+.formulario label{
+  margin: 20px 0;;
+}
+.formulario button{
+  width: 100%;
+}
+.title{
+  position:absolute;
+  bottom: 90%;
+}
