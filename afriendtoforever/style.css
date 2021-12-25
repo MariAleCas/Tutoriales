@@ -1,8 +1,37 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  background-color: #FEE3EC;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-container {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.site-container .menu-container img {
+  width: 50%;
+}
+.site-container .adopt img {
+  width: 50%;
+}
+.site-container .pet {
+  display: flex;
+  flex-direction: column;
+}
+.site-container .pet img {
+  width: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */
