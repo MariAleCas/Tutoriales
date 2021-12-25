@@ -44,12 +44,19 @@ text-align: center;
         color: $color-light;
       }
     }
-    .line{
-      width: 150px;
-      height: 6px;
-      background-color:$lines;
-      margin: 0 auto 11px;
+    .name{
+      h1{
+        height: 40px;
+      }
+      .line{
+        width: 150px;
+        height: 6px;
+        background: linear-gradient(2deg, transparent 44%, $lines 51%);
+        border-bottom-right-radius: 5px;
+        margin: 0 auto 11px;
+      }
     }
+
     .adopt{
       .marco{
         .marco2{
@@ -78,7 +85,7 @@ text-align: center;
         padding: 18px 45px;
         position: absolute;
         left: 72px;
-        bottom: 130px;
+        bottom: 146px;
         color: #FEE3EC;
         font-weight: 600;
         font-size: 18px;

@@ -38,10 +38,14 @@ body {
 .site-container .presentation .welcome h3 {
   color: rgba(0, 0, 0, 0.5);
 }
-.site-container .presentation .line {
+.site-container .presentation .name h1 {
+  height: 40px;
+}
+.site-container .presentation .name .line {
   width: 150px;
   height: 6px;
-  background-color: #F2789F;
+  background: linear-gradient(2deg, transparent 44%, #F2789F 51%);
+  border-bottom-right-radius: 5px;
   margin: 0 auto 11px;
 }
 .site-container .presentation .adopt .marco .marco2 {
@@ -69,7 +73,7 @@ body {
   padding: 18px 45px;
   position: absolute;
   left: 72px;
-  bottom: 130px;
+  bottom: 146px;
   color: #FEE3EC;
   font-weight: 600;
   font-size: 18px;
