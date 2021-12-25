@@ -21,12 +21,16 @@ background-color: $background;
   flex-direction: column;
 
   .menu-container{
-    img{
-       width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    .img_logo{
+      width: 220px;
     }
-  }
-  .presentation{
-
+    .img_icon{
+      width: 50px;
+    }
   }
   .adopt{
 
@@ -41,7 +45,4 @@ width: 50%;
       width: 50%;
     }
   }
-}
-img{
-
 }

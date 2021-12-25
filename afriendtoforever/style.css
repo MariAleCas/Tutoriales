@@ -20,8 +20,17 @@ body {
   display: flex;
   flex-direction: column;
 }
-.site-container .menu-container img {
-  width: 50%;
+.site-container .menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+.site-container .menu-container .img_logo {
+  width: 220px;
+}
+.site-container .menu-container .img_icon {
+  width: 50px;
 }
 .site-container .adopt img {
   width: 50%;
