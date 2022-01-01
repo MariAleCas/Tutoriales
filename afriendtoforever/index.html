@@ -14,45 +14,73 @@
   <div class="container">
     <div class="site-container">
       <div class="menu-container">
-        <img class="img_logo" src="/img/logo.png" alt="">
-        <img class="img_icon" src="/icon/menu.png" alt="">
+        <img class="img_logo" src="./img/logo.png" alt="">
+        <img class="img_icon" id="img_icon" src="./icon/menu.png" alt="">
+        <ul class="menu" id="menu">
+          <li><a href="#">Home</a> </li>
+          <li> <a href="#">Adopt</a> </li>
+          <li> <a href="#">Shop</a> </li>
+        </ul>
+
       </div>
       <div class="presentation">
-        <div class="welcome">
-          <h3>Welcome</h3>
-          <div class="name">
-            <h1>I'm Chess</h1>
-            <div class="line"></div>
-          </div>
+        <div class="rigth">
+          <div class="welcome">
+            <h3>Welcome</h3>
+            <div class="name">
+              <h1>I'm Chess</h1>
+              <div class="line"></div>
+            </div>
 
+          </div>
+          <div class="information" id="information">
+            <h2 id="age">4 Years Old</h2>
+            <h2 id="gender">Male</h2>
+            <h2 id="like">I like to play</h2>
+          </div>
+          <div class="pet" id="pet">
+            <div class="box active" onclick="changeImage(this)">
+              <img id="gatito2" src="/img/gatito2 1.png" alt="thumb">
+            </div>
+            <div class="box" onclick="changeImage(this)">
+              <img id="perrito1" src="/img/perrito1 1.png" alt="thumb">
+            </div>
+            <div class="box" onclick="changeImage(this)">
+              <img id="perrito2" src="/img/perrito2 1.png" alt="thumb">
+            </div>
+          </div>
         </div>
         <div class="adopt">
           <div class="marco">
-
             <div class="marco2">
               <div class="marco1">
-                <img src="/img/gatito 1.png" alt="">
+                <div class="main-img">
+                  <img class="gatito1" id="gatito1" src="/img/gatito 1.png" alt="">
+                </div>
+
               </div>
             </div>
           </div>
 
           <button type="button">Adopt me</button>
         </div>
-        <div class="information">
-          <h2>4 Years Old</h2>
-          <h2>Male</h2>
-          <h2>I like to play</h2>
-        </div>
-        <div class="pet">
-          <img src="/img/gatito2 1.png" alt="">
-          <img src="/img/perrito1 1.png" alt="">
-          <img src="/img/perrito2 1.png" alt="">
-        </div>
       </div>
 
     </div>
   </div>
-  <script type="module" src="./main.js"></script>
+  <script>
+
+    const thumbs = document.querySelector(".pet").children;
+    function changeImage(event) {
+      console.log(document.querySelector(".gatito1").src = event.children[0].src);
+      for (let i = 0; i < thumbs.length; i++) {
+        thumbs[i].classList.remove("active");
+      }
+      event.classList.add("active");
+    }
+
+
+  </script>
 </body>
 
 </html>
