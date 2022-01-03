@@ -1,3 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+$Dark-cyan: hsl(185, 75%, 39%);
+$Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+$Dark-grayish-blue: hsl(227, 10%, 46%);
+$Dark-gray: hsl(0, 0%, 59%);
+$lg: 18px;
+$style:'Kumbh Sans', sans-serif;
+
+body{
+  font-family: $style;
+  background: $Dark-cyan;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  .card-container{
+    position: relative;
+    box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2); ;
+    margin: 20px;
+    max-width: 360px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #ffffff;
+    .information{
+      .imagen{
+        position: relative;
+        .card{
+          width: 100%;
+        }
+        .photo{
+          position: absolute;
+          border-radius: 100%;
+          left: 128px;
+          top: 69px;
+          border: 6px solid #ffffff;
+        }
+      }
+    }
+    .data{
+      text-align: center;
+      margin: 66px 0 12px 0;
+      padding: 7px;
+      p{
+        font-size: $lg;
+        font-weight: 700;
+        color: $Very-dark-desaturated-blue;
+        span{
+          font-size: $lg;
+          font-weight: 400;
+          color: $Dark-grayish-blue;
+        }
+      }
+      span{
+        line-height: 1.5;
+        font-weight: 400;
+        color: $Dark-grayish-blue;
+        font-size: 14px;
+      }
+    }
+    .numbers{
+      display: flex;
+      justify-content: space-between;
+      margin: 20px;
+      padding: 5px 10px;
+      text-align: center;
+      p{
+        font-size: $lg;
+        font-weight: 700;
+        color: $Very-dark-desaturated-blue;
+      }
+      span{
+        font-size: 14px;
+        font-weight: 400;
+        color: $Dark-grayish-blue;
+      }
+    }
+    hr{
+      background-color: $Dark-gray;
+      border: none;
+      height: 0.5px;
+    }
+  }
+}
+
+
 
 
 
