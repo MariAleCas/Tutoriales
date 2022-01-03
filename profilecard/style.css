@@ -8,6 +8,10 @@
 body {
   font-family: "Kumbh Sans", sans-serif;
   background: #19a2ae;
+  background-image: url(./img/bg-pattern-top.svg), url(./img/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 80%, 80%;
+  background-position: -164% 142%, 225% -86%;
 }
 
 .container {
@@ -35,9 +39,10 @@ body {
 .container .card-container .information .imagen .photo {
   position: absolute;
   border-radius: 100%;
-  left: 128px;
-  top: 69px;
+  left: 125px;
+  top: 89px;
   border: 6px solid #ffffff;
+  background: #ffffff;
 }
 .container .card-container .data {
   text-align: center;
@@ -81,6 +86,7 @@ body {
   background-color: #969696;
   border: none;
   height: 0.5px;
+  opacity: 30%;
 }
 
 .attribution {
@@ -90,6 +96,54 @@ body {
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media (max-width: 388px) {
+  .container .card-container .information .imagen .photo {
+    background: #ffffff;
+    position: absolute;
+    border-radius: 100%;
+    left: 115px;
+    top: 89px;
+    border: 6px solid #ffffff;
+  }
+}
+@media (max-width: 368px) {
+  .container .card-container .information .imagen .photo {
+    background: #ffffff;
+    position: absolute;
+    border-radius: 100%;
+    left: 105px;
+    top: 89px;
+    border: 6px solid #ffffff;
+  }
+}
+@media (max-width: 320px) {
+  .container .card-container .information .imagen .photo {
+    background: #ffffff;
+    position: absolute;
+    border-radius: 100%;
+    left: 85px;
+    top: 69px;
+    border: 6px solid #ffffff;
+  }
+}
+@media (max-width: 280px) {
+  .container .card-container .information .imagen .photo {
+    background: #ffffff;
+    position: absolute;
+    border-radius: 100%;
+    left: 66px;
+    top: 54px;
+    border: 6px solid #ffffff;
+  }
+  .container .card-container .numbers {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .card-container .numbers div {
+    margin: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
