@@ -28,7 +28,7 @@ body{
   min-height: 100vh;
   .card-container{
     position: relative;
-    box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2); ;
+    box-shadow:0px 0px 39px 1px rgba(0, 0, 0, 0.2); ;
     margin: 20px;
     max-width: 360px;
     border-radius: 15px;
@@ -75,7 +75,7 @@ body{
       display: flex;
       justify-content: space-between;
       margin: 20px;
-      padding: 5px 10px;
+      padding: 5px 34px;
       text-align: center;
       p{
         font-size: $lg;
@@ -91,8 +91,8 @@ body{
     hr{
       background-color: $Dark-gray;
       border: none;
-      height: 0.5px;
-      opacity: 30%;
+      height: 1px;
+      opacity: 21%;
     }
   }
 }
