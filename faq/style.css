@@ -16,42 +16,101 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0px 20px;
+  margin: 0px 15px;
   min-height: 100vh;
 }
-.container .questions-container {
+.container .faq-container {
   display: flex;
   flex-direction: column;
-  margin: 44px 0;
+  margin: 90px 0 10px 0;
   box-shadow: 0px 10px 7px 0px rgba(74, 75, 94, 0.5);
   border-radius: 20px;
   background: #ffffff;
   position: relative;
 }
-.container .questions-container .imagenes .woman {
+.container .faq-container .faq-imagenes {
+  margin: 44px 0;
+}
+.container .faq-container .faq-imagenes .woman {
   position: absolute;
   width: 80%;
   left: 28px;
-  top: -61px;
+  top: -85px;
 }
-.container .questions-container .imagenes .shadow {
+.container .faq-container .faq-imagenes .shadow {
   position: absolute;
   top: 10px;
-  left: 28px;
+  left: 30px;
   width: 80%;
 }
-.container .questions-container .questions {
+.container .faq-container .faq {
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 21px 10px;
+  /* .answer{
+    color: $Dark-grayish-blue;
+    p{
+      max-height: 0;
+      padding: 7px 8px 7px 0;
+      overflow: hidden;
+    }
+  }*/
 }
-.container .questions-container .questions h1 {
+.container .faq-container .faq h1 {
   text-align: center;
-  margin: 90px 0px 20px 0px;
+  margin: 0 0 10px 0;
 }
-.container .questions-container .questions .question {
-  color: #787887;
-  font-weight: 400;
+.container .faq-container .faq .question {
+  /* p{
+     margin: 10px 0;
+     color: $Dark-grayish-blue;
+     font-weight: 400;
+   }*/
+}
+.container .faq-container .faq .question .accordion__label {
+  display: block;
+  color: #000000;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.1s;
+}
+.container .faq-container .faq .question .accordion__label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  width: 12px;
+  height: 6px;
+  background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+  background-size: contain;
+  transition: transform 0.4s;
+}
+.container .faq-container .faq .question img {
+  width: 3%;
+  height: 6%;
+}
+.container .faq-container .faq .question img:hover {
+  cursor: pointer;
+}
+.container .faq-container .faq .question .answer {
+  background: #ffffff;
+  line-height: 1.6;
+  font-size: 0.85em;
+  display: none;
+}
+.container .faq-container .faq .question .accordion__input {
+  display: none;
+}
+.container .faq-container .faq .question .accordion__input:checked ~ .answer {
+  display: block;
+}
+.container .faq-container .faq .question .accordion__input:checked ~ .accordion__label::after {
+  transform: translateY(-50%) rotate(0.5turn);
+}
+.container .faq-container .faq hr {
+  border: 0.1px solid #e7e7e9;
 }
 
 .attribution {
