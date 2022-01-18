@@ -1,6 +1,6 @@
 {
   "name": "random-messages-namesrandom",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "random de mensajes",
   "main": "src/index.js",
   "scripts": {
@@ -14,7 +14,15 @@
   "author": "Maria Alejandra <maalbecas@gmail.com>",
   "license": "MIT",
   "bin": {
-    "random-msg": "./bin/global.js"
+    "random-msg": "bin/global.js"
   },
-  "preferGlobal": true
+  "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariAleCas/Tutoriales.git#master"
+  },
+  "bugs": {
+    "url": "https://github.com/MariAleCas/Tutoriales/issues"
+  },
+  "homepage": "https://github.com/MariAleCas/Tutoriales/tree/master#readme"
 }
