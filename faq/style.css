@@ -16,6 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: 0px 15px;
   min-height: 100vh;
 }
@@ -67,6 +68,11 @@ body {
      font-weight: 400;
    }*/
 }
+.container .faq-container .faq .question .interrogative {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .container .faq-container .faq .question .accordion__label {
   display: block;
   color: #000000;
@@ -98,7 +104,6 @@ body {
   background: #ffffff;
   line-height: 1.6;
   font-size: 0.85em;
-  display: none;
 }
 .container .faq-container .faq .question .accordion__input {
   display: none;

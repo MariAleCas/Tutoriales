@@ -26,6 +26,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: 0px 15px;
   min-height: 100vh;
   .faq-container{
@@ -61,6 +62,11 @@ body{
           margin: 0 0 10px 0;
         }
         .question  {
+          .interrogative{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
           .accordion__label {
             display: block;
             color: #000000;
@@ -97,7 +103,6 @@ body{
             background: #ffffff;
             line-height: 1.6;
             font-size: 0.85em;
-            display: none;
           }
           .accordion__input {
             display: none;

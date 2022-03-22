@@ -8,5 +8,9 @@
   },
   "devDependencies": {
     "vite": "^2.7.2"
-  }
+  },
+  "description": "![Design preview for the FAQ accordion card coding challenge](./design/desktop-preview.jpg)",
+  "main": "main.js",
+  "author": "",
+  "license": "ISC"
 }
